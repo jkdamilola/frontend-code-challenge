@@ -18,8 +18,8 @@ export default class Storage {
   }
 
   getObject(key, defaultValue) {
-    if(typeof this._$window.localStorage[key] !== 'undefined') {
-        return JSON.parse(this._$window.localStorage[key]);
+    if (typeof this._$window.localStorage[key] !== 'undefined') {
+      return JSON.parse(this._$window.localStorage[key]);
     } else {
       return defaultValue || false;
     }
