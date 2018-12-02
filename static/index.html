@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <base href="/">
   <meta charset=utf-8>
-  <title>RandoStore</title>
+  <title ng-bind="pageTitle"></title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/add-product.css">
+  <link rel="stylesheet" href="assets/css/products.css">
+  <link rel="stylesheet" href="assets/css/product.css">
+  <link rel="stylesheet" href="assets/css/checkout.css">
+  <link rel="stylesheet" href="assets/css/quantity-control.css">
 </head>
 <body>
-  <h1>RandoStore Homepage</h1>
-  <p>
-    <a href="/add-items.html">Put Items up for Sale</a><br>
-    <a href="/items.html">Browse our Items!</a><br>
-    <a href="/checkout.html">Check out</a>
-  </p>
+  <div ui-view class="main-page"></div>
 </body>
+<script src="main.js"></script>
 </html>
