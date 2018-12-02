@@ -1,0 +1,24 @@
+<div ng-show="$ctrl.product" class="product-page">
+    <div class="product-page-container">
+        <ol class="product-breadcrumbs">
+            <li class="breadcrumb-item"><a ui-sref="app.home">Home</a></li>
+            <li class="breadcrumb-item"> / <a ui-sref="app.products">Products</a></li>
+            <li class="breadcrumb-item"> / {{$ctrl.product.name}}</li>
+        </ol>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="product-details-image" ng-style="{'background-image': 'url({{$ctrl.product.img}})'}"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-details-row">
+                    <h1 class="product-title">{{$ctrl.product.name}}</h1>
+                    <div class="product-price">{{$ctrl.product.price | currency :'QAR ':true }}</div>
+                </div>
+                <div class="product-details-button">
+                    <quantity-control quantity="$ctrl.quantity" on-change="$ctrl.changeQuantity(quantity)" class="host"></quantity-control>
+                    <div class="product-cart-button button button-primary button-large" ng-click="$ctrl.addToCart()">Add to cart</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

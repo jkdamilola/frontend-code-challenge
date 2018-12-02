@@ -1,0 +1,31 @@
+<div class="add-container">
+  <div class="row">
+
+    <div class="col-md-6 offset-md-3 col-xs-12">
+      <h1 class="text-xs-center">Put Items up for Sale</h1>
+
+      <span class="error-message">{{$ctrl.error}}</span>
+
+      <form ng-submit="$ctrl.addProduct()">
+        <fieldset ng-disabled="$ctrl.isSubmitting">
+
+          <fieldset class="form-group">
+            <input class="form-control form-control-lg" type="text" placeholder="Name" ng-model="$ctrl.formData.name" required />
+          </fieldset>
+
+          <fieldset class="form-group">
+            <input class="form-control form-control-lg" type="number" placeholder="Price" ng-model="$ctrl.formData.price" required />
+          </fieldset>
+
+          <fieldset class="form-group">
+            <input class="form-control form-control-lg" type="url" placeholder="Image URL" ng-model="$ctrl.formData.img" required />
+          </fieldset>
+
+          <button class="button button-primary button-large pull-xs-right" type="submit">Submit</button>
+
+        </fieldset>
+      </form>
+    </div>
+
+  </div>
+</div>

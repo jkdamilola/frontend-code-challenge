@@ -1,0 +1,46 @@
+<div class="main-header navbar-fixed-top">
+  <div class="header-menu">
+    <div class="header-mobile-nav-wrapper">
+      <button type="button" class="navbar-toggle">
+        <span class="fa fa-bars fa-2x"></span>
+      </button>
+    </div>
+    <div class="header-logo-wrapper">
+      <a class="navbar-brand" ui-sref="app.home" ng-bind="::$ctrl.appName | uppercase"></a>
+    </div>
+    <div class="header-nav-wrapper">
+      <ul class="header-nav">
+        <li class="header-nav-item">
+          <a ui-sref-active="active" ui-sref="app.home">HOME</a>
+        </li>
+        <li class="header-nav-item">
+          <a ui-sref-active="active" ui-sref="app.add">ADD PRODUCT</a>
+        </li>
+        <li class="header-nav-item">
+          <a ui-sref-active="active" ui-sref="app.products">BROWSE PRODUCTS</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header-cart-wrapper">
+      <div class="header-cart">
+        <div class="mobil-shopping-cart">
+          <span><i class="fa fa-shopping-cart fa-2x"></i> <span>( {{$ctrl.totalItems}} )</span></span>
+        </div>
+        <div class="header-cart-item">
+          <a ui-sref-active="active" ui-sref="app.checkout">MY CART <span>( {{$ctrl.totalItems}} )</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<ul class="mobile-header-nav">
+    <li>
+      <a ui-sref-active="active" ui-sref="app.home">HOME</a>
+    </li>
+    <li>
+      <a ui-sref-active="active" ui-sref="app.add">ADD PRODUCT</a>
+    </li>
+    <li>
+      <a ui-sref-active="active" ui-sref="app.products">BROWSE PRODUCTS</a>
+    </li>
+  </ul>-->
+</div>

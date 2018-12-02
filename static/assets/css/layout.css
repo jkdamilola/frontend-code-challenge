@@ -1,0 +1,56 @@
+@media screen and (min-width: 768px) {
+  .compare-bar-content {
+      text-align: center
+  }
+  .header-logo-wrapper {
+      text-align: left
+  }
+  .header-mobile-nav-wrapper {
+      display: none
+  }
+  .mobil-shopping-cart {
+      display: none
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-nav-wrapper {
+      display: none
+  }
+  .mobile-header-nav li {
+      display: block;
+      line-height: 30px;
+  }
+  .header-logo-wrapper {
+      display: table-cell;
+      text-align: center;
+      vertical-align: top;
+  }
+  .header-mobile-nav-wrapper {
+      display: table-cell;
+      float:left;
+  }
+  .header-cart-item {
+      display: none
+  }
+}
+
+footer {
+  background: #f3f3f3;
+  margin-top: 3rem;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .logo-font {
+  vertical-align: middle;
+}
+
+footer .attribution {
+  vertical-align: middle;
+  margin-left: 10px;
+  font-size: 1.1rem;
+  color: #bbb;
+  font-weight: 300;
+}

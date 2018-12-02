@@ -1,0 +1,24 @@
+<div class="layout-container" ng-show="$ctrl.productsLoaded && $ctrl.products.length">
+  <div class="product-grid">
+    <div class="col-md-4 col-sm-6" ng-repeat="product in $ctrl.products">
+      <div class="image-container">
+        <div class="product-image" ng-style="{'background-image': 'url({{product.img}})'}"></div>
+        <div class="overlay">
+          <a class="button button-primary" ui-sref="app.product({id: product.id})">View Details</a>
+          <div class="button button-primary" ng-click="$ctrl.addToCart(product)">Add To Cart</div>
+        </div>
+      </div>
+      <div class="product-details">
+        <div class="product-title">{{product.name}}</div>
+        <div class="product-price">{{product.price | currency :'QAR ':true }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="layout-container" ng-show="!$ctrl.productsLoaded">
+  Loading products...
+</div>
+<div class="layout-container" ng-show="$ctrl.productsLoaded && !$ctrl.products.length">
+  No products are here... yet.
+</div>
