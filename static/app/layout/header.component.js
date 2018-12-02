@@ -4,6 +4,7 @@ class AppHeaderCtrl {
 
     this.appName = AppConstants.appName;
     this.totalItems = Cart.totalItems;
+    this.collapse = false;
 
     // const that = this;
     $scope.$on('item-updated', this.updateCartTotal.bind(this));

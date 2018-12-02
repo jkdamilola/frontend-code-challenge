@@ -1,7 +1,5 @@
 class QuantityControlCtrl {
-  constructor() {
-
-  }
+  constructor() {}
 
   update() {
     if (this.cart) {
