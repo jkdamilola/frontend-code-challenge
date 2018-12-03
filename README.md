@@ -26,7 +26,7 @@ It creates two folders named *build* and *dist* in the root directory. The *buil
 # Implementation Explanation
 
 ## Dependencies
-- Front-end: **ES6, AngularJS, Angular UI Router**
+- Front-end: **ES6, AngularJS, Angular UI Router, Bootstrap**
 - Asynchronous communication: **AngularJS $http Module**
 - Database: **LocalStorage**
 - Back-end: **Node.js**
