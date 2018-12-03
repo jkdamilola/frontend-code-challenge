@@ -21,7 +21,7 @@ To start the app, run on *project-root* folder via the terminal.
 npm start
 ```
 
-It creates two folders named *build* and *dist* in the root directory. The *build* directory contains the unminified version of the JavaScript files for easy debugging during development while the *dist* contains the minified version ready for production.
+It creates two folders named *build* and *dist* in the root directory. The *build* directory contains the unminified version of the JavaScript files for easy debugging during development while the *dist* contains the minified version ready for production. You can then navigate to http://localhost:3000 on your browser to access the app.
 
 # Implementation Explanation
 
